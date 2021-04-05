@@ -1,27 +1,30 @@
-/* Basic Style */
 body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.head-image {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.head-image__eisenhower {
     width: 100%;
 }
-.aaa .more_inf {
+.head-image__more-inf {
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-.aaa { text-align: center;
+@media (max-width: 768px) {
+    
+    .head-image { 
+        text-align: center;
+    }
+    
 }
-}
-.centered-main-page-element {
+
+.main-page {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -35,14 +38,16 @@ body {
     display: flex;
 }
 ul {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
-li, h3 {
-    list-style:none;
+li, 
+h3 {
+    list-style: none;
 }
-input,button{
-    outline:none;
+input,
+button{
+    outline: none;
 }
 button {
     background: none;
@@ -100,7 +105,6 @@ li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,37 +122,37 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+li > input[type="text"] {
     width: 226px
 }
-li > button.delete:hover {
+li > .delete:hover {
     color: #CF2323;
 }
-button.delete img {
+.del-image {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.del-image:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
 ul#completed-tasks label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 ul li input[type=text] {
-    display:none
+    display: none
 }
 
-ul li.editMode input[type=text] {
-    display:inline-block;
-    width:224px
+ul li.edit-mode input[type=text] {
+    display: inline-block;
+    width: 224px
 }
 
-ul li.editMode label {
-    display:none;
+ul li.edit-mode label {
+    display: none;
 }
