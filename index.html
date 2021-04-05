@@ -3,12 +3,12 @@
   <head>
     <title>Todo App</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
 <body>
   <header class="head-image">
-    <img class="head-page__eisenhower" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
-    <a class="head-page__more-inf" 
+    <img class="head-image__eisenhower" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
+    <a class="head-image__more-inf" 
         href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
     </a>
@@ -29,7 +29,7 @@
         <input type="text">
         <button class="edit">Edit</button>
         <button class="delete">
-          <img src="./remove.svg" alt="delete">
+          <img class="del-image" src="./remove.svg" alt="delete">
         </button>
       </li>
       <li class="edit-mode">
@@ -38,7 +38,7 @@
         <input type="text" value="Go Shopping" class="task">
         <button class="edit">Save</button>
         <button class="delete">
-          <img src="./remove.svg" alt="delete">
+          <img class="del-image" src="./remove.svg" alt="delete">
         </button>
       </li>
     </ul>
@@ -46,7 +46,7 @@
     <ul id="completed-tasks">
       <li>
         <input type="checkbox" checked>
-        <label class="completed-tasks__task">See the Doctor</label>
+        <label class="task">See the Doctor</label>
         <input type="text" class="task">
         <button class="edit">Edit</button>
         <button class="delete">
